@@ -1,0 +1,112 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway|Montserrat);
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    
+	background-image: -moz-linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,.5)), url('./img/background.jpg');
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../img/background.jpg');
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,.5)), url('./img/background.jpg');
+    background-image: linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,.5)), url('./img/background.jpg');
+    
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, p {
+    color: white;
+}
+
+h1 {
+    font-size: 4em;
+    margin-top: .75em;
+    margin-bottom: .75em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+a {
+    color: lightskyblue;
+}
+
+a:hover {
+    color: deepskyblue;
+}
+
+.svg-container {
+    
+}
+
+svg {
+    padding: 1em;
+    border-radius: .5em;
+    width: inherit;
+}
+
+.well {
+    background-color: white;
+    color: darkblue;
+    border-radius: .5em;
+}
+
+.selectize-input {
+    border-color: darkblue;
+    border-width: .2em;
+    border-style: solid;
+}
+
+.selectize-input .item {
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25em;
+}
+
+.navbar {
+	-o-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    font-family: sans-serif;
+    padding-top: 1em;
+    padding-bottom: 1em;
+	background-color: white;
+    border: none;
+}
+
+.nav > li > a{
+	color: darkblue !important;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:focus {
+    color: dodgerblue !important;
+    border-radius: .5em;
+    background-color: transparent !important;
+    border-width: .2em;
+    border-color: dodgerblue;
+    border-style: solid;
+}
+
+.nav > li > a:hover {
+	color: dodgerblue !important;
+}
+
+.navbar-brand {
+	font-family: 'Montserrat', sans-serif;
+	color: midnightblue !important;
+}

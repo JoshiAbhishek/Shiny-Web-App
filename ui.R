@@ -10,6 +10,9 @@ shinyUI(
     #App Title
     title = 'Iris Species Data Visualization',
     
+    #App theme
+    theme = "styles.css",
+    
     #Scatterplot Tabpanel
     tabPanel('Scatterplot',
              sidebarLayout(
@@ -18,7 +21,7 @@ shinyUI(
                sidebarPanel( "Species Scatterplot",
                              
                              #Select species type
-                             selectInput("scatter", label = h4("Choose species"), 
+                             selectInput("scatter", label = h3("Choose species"), 
                                          choices = list("All" = 'all_data',
                                                         "Setosa" = 'setosa_data', 
                                                         "Versicolor" = 'versicolor_data', 
@@ -26,7 +29,7 @@ shinyUI(
                                          selected = "All"),
                              
                              #Select scatterplot color
-                             radioButtons("color", label = h4("Color"),
+                             radioButtons("color", label = h3("Color"),
                                           choices = list('Set1', 'Set2'), 
                                           selected = 'Set1')
                              
@@ -48,7 +51,7 @@ shinyUI(
                sidebarPanel( "Species Petal Lengths and Widths",
                              
                              #Select species type
-                             selectInput("petals", label = h4("Choose species"), 
+                             selectInput("petals", label = h3("Choose species"), 
                                          choices = list("Setosa" = 'setosa_data', 
                                                         "Versicolor" = 'versicolor_data', 
                                                         "Virginica" = 'virginica_data'),
@@ -72,7 +75,7 @@ shinyUI(
                sidebarPanel( "Species Sepal Lengths and Widths",
                              
                              #Choose Species Type
-                             selectInput("sepals", label = h4("Choose species"), 
+                             selectInput("sepals", label = h3("Choose species"), 
                                          choices = list("Setosa" = 'setosa_data', 
                                                         "Versicolor" = 'versicolor_data', 
                                                         "Virginica" = 'virginica_data'),
